@@ -1,0 +1,24 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 100%;
+}
+
+@media(min-width: 1024px) {
+  .page-body {
+    padding: 0 28px;
+  }
+}
+
+@media(min-width: 1260px) {
+  .page-body {
+    padding: 0 90px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .page-body {
+    padding: 0 335px;
+  }
+}
