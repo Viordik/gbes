@@ -82,20 +82,21 @@
   &__item {
     padding: 15px 0;
 
-    background-color: rgba( #70b85d, 1);
+    background-color: rgba( #cd2626, 1);
 
     &:not(:first-child) {
       border-top: 1px solid #ffffff;
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid #064000;
+      border-bottom: 1px solid #8b1a1a;
     }
   }
 
   &__item-link {
     font-size: 16px;
-    color: #000000;
+    font-weight: 700;
+    color: #fff;
     text-decoration: none;
   }
 
@@ -135,6 +136,11 @@
 
     &__item-link {
       color: #222222;
+
+      &--active {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #cd2626;
+      }
     }
   }
 }
