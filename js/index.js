@@ -5,6 +5,8 @@ var menu = document.querySelector('.menu-nav');
 btnMenu.addEventListener('click', function () {
   menu.classList.toggle('menu-nav--active');
 })
+//===============================================
+
 
 //===============================================
 // Yandex Map
