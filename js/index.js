@@ -4,17 +4,13 @@ var menu = document.querySelector('.menu-nav');
 
 btnMenu.addEventListener('click', function () {
   menu.classList.toggle('menu-nav--active');
-})
+});
+
 //===============================================
 //Раскрывающиеся блоки с историей компании на странице О компании
-// var btnYear = document.querySelector('.history-company__btn-year');
-// var blockHide = document.querySelector('.history-company__text-hide');
+var btnYear = document.querySelectorAll('.history-company__btn-year');
+var blockHide = document.querySelectorAll('.history-company__text-hide');
 
-// btnYear.addEventListener('click', function () {
-
-//     blockHide.classList.toggle('history-company__text-hide--active');
-
-// })
 
 //===============================================
 // Yandex Map
