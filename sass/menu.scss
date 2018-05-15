@@ -137,6 +137,11 @@
     &__item-link {
       color: #222222;
 
+      &:hover {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #cd2626;
+      }
+
       &--active {
         padding-bottom: 10px;
         border-bottom: 2px solid #cd2626;
