@@ -1,0 +1,37 @@
+.lot-house {
+
+}
+
+
+@media(min-width: 768px) {
+  .lot-house {
+    &__description {
+      display: flex;
+      padding-bottom: 10px;
+    }
+
+    &__img {
+      line-height: 0;
+    }
+
+    &__text {
+      padding-left: 30px;
+    }
+  }
+}
+
+
+@media(min-width: 1024px) {
+  .lot-house {
+    display: flex;
+
+
+    &__wrapper-btn {
+      flex-basis: 45%;
+    }
+
+    &__description {
+      flex-basis: 70%;
+    }
+  }
+}
