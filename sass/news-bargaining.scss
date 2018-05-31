@@ -16,6 +16,29 @@
   &__wrapper {
     padding-top: 20px;
   }
+
+  &__all-publications {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    max-width: 336px;
+    margin: 30px auto 30px auto;
+    padding: 5px 0;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid #e00;
+    outline: 0;
+
+    &:active {
+      background-color: #ee0000;
+      color: #fff;
+    }
+  }
 }
 
 
@@ -98,7 +121,7 @@
   .elem-ad {
     width: 100%;
 
-    &:not(:nth-child(3n)) {
+    &:not(:nth-child(5n)) {
       padding-right: 5px;
     }
 

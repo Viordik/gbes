@@ -3,7 +3,7 @@
   padding-top: 50px;
 
   &__btn {
-    margin-top: 10px;
+    cursor: pointer;
     display: block;
     width: 100%;
     border: none;
@@ -13,6 +13,34 @@
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  &__caption {
+    text-align: center;
+    padding: 10px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding-top: 10px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &__more {
+    display: inline-block;
+    color: #333;
+    text-transform: uppercase;
+    padding-top: 10px;
+
+    &:hover {
+      color: #cd2626;
+    }
   }
 }
 
@@ -28,7 +56,6 @@
 
 .text-hide {
   height: 0;
-  overflow: hidden;
 
   opacity: 0;
 
@@ -36,7 +63,6 @@
 
   &--active {
     height: auto;
-    overflow: visible;
 
     transform: none;
     opacity: 1;
@@ -49,6 +75,10 @@
 
     &__btn {
       max-width: 336px;
+    }
+
+    &__caption {
+      padding: 0 20px;
     }
   }
 
@@ -71,6 +101,16 @@
 
 @media(min-width: 1024px) {
   .news {
-    // padding: 50px 50px 0 50px;
+    &__caption {
+      padding: 0 60px;
+    }
+  }
+}
+
+@media(min-width: 1260px) {
+  .news {
+    &__caption {
+      padding: 0;
+    }
   }
 }

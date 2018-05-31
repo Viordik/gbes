@@ -1,6 +1,4 @@
-.content-about {
-  padding-top: 50px;
-
+.auction-activity {
   &__caption {
     padding-bottom: 10px;
     font-weight: 700;
@@ -8,50 +6,38 @@
     text-align: center;
     color: #333;
     text-transform: uppercase;
-
     letter-spacing: 3px;
   }
 
-
-  &__conteiner-img {
-    padding-bottom: 15px;
+  &__wrapper {
+    padding-bottom: 10px;
   }
 
-
-  &__img {
-    width: 100%;
+  &__list {
+    list-style: none;
+    padding: 0;
   }
 
   &__text {
     color: #333;
-    padding-bottom: 15px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
   }
 
-  &__list-item {
-    color: #333;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+  &__type {
+    text-align: center;
   }
 }
 
 
 @media(min-width: 768px) {
-  .content-about {
-    &__conteiner {
+  .auction-activity {
+    &__type {
       display: flex;
-      flex-direction: row-reverse;
-    }
-
-    &__wrapper {
-      flex-basis: 60%;
-    }
-
-    &__conteiner-img {
-      margin-left: 5px;
+      justify-content: space-around;
+      margin: 0 auto;
+      max-width: 630px;
     }
 
     &__img {
@@ -60,10 +46,11 @@
   }
 }
 
+
 @media(min-width: 1024px) {
-  .content-about {
+  .auction-activity {
     &__wrapper {
-      flex-basis: 100%;
+      padding-bottom: 0;
     }
   }
 }

@@ -1,0 +1,97 @@
+.lot {
+  margin: 30px 0;
+}
+
+.lot-header {
+  margin: 20px 0;
+  &__caption {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    // border-top: 2px solid #f5f5f5;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__wrapper {
+    padding-bottom: 20px;
+  }
+
+
+  &__text {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+
+.lot-content {
+  margin-bottom: 20px;
+  &__elem {
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    color: #333333;
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+  }
+}
+
+.lot-img {
+  margin-bottom: 40px;
+  &__wrapper {
+    line-height: 0;
+    padding-bottom: 10px;
+  }
+}
+
+
+@media(min-width: 768px) {
+  .lot-header {
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__wrapper {
+      flex-basis: 33%;
+    }
+  }
+
+  .lot-content {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .lot-img {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__elem {
+      height: 180px;
+    }
+  }
+}

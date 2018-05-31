@@ -1,20 +1,67 @@
+.all-lot {
+  padding-top: 50px;
+}
+
 .lot-house {
 
-}
+  &__text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__more {
+    display: inline-block;
+    color: #333;
+    text-transform: uppercase;
+    padding-top: 10px;
+
+    &:hover {
+      color: #cd2626;
+    }
+  }
+
+  &__description {
+    padding-bottom: 20px;
+  }
+
+  &__description-hide {
+    transform: scale(0);
+    padding-bottom: 0;
+    height: 0;
+    opacity: 0;
+    transition: top 0.5s ease-in;
+
+      &--active {
+        transform: scale(1);
+        height: auto;
+        opacity: 1;
+
+        // overflow: auto;
+        // // Скрыть scrollbar
+        // -ms-overflow-style: none;  // IE 10+
+        // overflow: -moz-scrollbars-none; // Firefox
+
+        // &::-webkit-scrollbar {
+        //   display: none;  // Safari and Chrome
+        // }
+      }
+    }
+  }
 
 
 @media(min-width: 768px) {
   .lot-house {
     &__description {
       display: flex;
-      padding-bottom: 10px;
     }
 
     &__img {
       line-height: 0;
     }
 
-    &__text {
+    &__wrapper-text {
       padding-left: 30px;
     }
   }
@@ -30,8 +77,10 @@
       flex-basis: 45%;
     }
 
-    &__description {
+    &__description-hide {
       flex-basis: 70%;
+      // padding-top: 5px;
+      // padding-bottom: 5px;
     }
   }
 }

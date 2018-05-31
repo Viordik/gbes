@@ -37,18 +37,17 @@
 
 
   &__text-hide {
+    transform: scaleZ(0);
     height: 0;
-    overflow: hidden;
 
     opacity: 0;
 
-    transition: all 0.5s ease-in;
+    transition: 0.3s ease;
 
     &--active {
+      transform: scaleZ(1);
       height: auto;
-      overflow: visible;
 
-      transform: none;
       opacity: 1;
     }
   }
@@ -82,7 +81,6 @@
     }
 
     &__text-hide {
-      display: none;
       width: 100%;
       padding-bottom: 10px;
       padding-left: 15px;

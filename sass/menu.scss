@@ -108,6 +108,12 @@
 
 @media(min-width: 768px) {
   .menu {
+    margin-top: 15px;
+
+    &__logo {
+
+    }
+
     &__btn {
       display: none;
     }
@@ -115,6 +121,7 @@
 
   .menu-nav {
     position: relative;
+    padding: 0;
 
     transform: none;
 
