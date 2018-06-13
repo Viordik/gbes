@@ -1,0 +1,144 @@
+.reviews {
+  margin-bottom: 100px;
+  &__wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 5px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 70px;
+      box-shadow: 3px 3px 0 #cd2626;
+      right: 3px;
+      bottom: 5px;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 59px;
+      box-shadow: -3px -3px 0 #cd2626;
+      left: 3px;
+      top: 17px;
+    }
+  }
+
+  &__caption {
+    padding: 10px 0;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+
+    &--h4 {
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 23px;
+
+    &--name {
+      flex-basis: 25%;
+      padding: 0;
+    }
+  }
+
+
+  &__file {
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #cd2626;
+    padding: 5px 0;
+    margin: 10px 0;
+    max-width: 336px;
+
+    &::before{
+      position: absolute;
+      content: '';
+      width: 0%; height: 100%;
+      background: #cd2626;
+
+      top: 0;  left: auto; right: 0;
+      z-index: -1;
+      transition: all 700ms ease;
+
+    }
+
+    &:hover{
+      color: #ffffff;
+      box-shadow:none;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 100%; height: 100%;
+        background: #cd2626;
+        top: 0; left: 0; right: 0;
+        z-index: -2;
+      }
+    }
+
+    &:active {
+      border: 1px solid #cd2626;
+      color: #fff;
+      background-color: #cd2626;
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__name-text {
+    flex-basis: 25%;
+    font-size: 16px;
+  }
+
+
+
+  &__date {
+    text-transform: uppercase;
+    text-align: right;
+    // font-weight: 700;
+  }
+}
+
+
+@media(min-width: 768px) {
+  .reviews {
+    &__name {
+      justify-content: flex-start
+    }
+
+    &__text {
+      &--name {
+        flex-basis: 18%;
+      }
+    }
+
+    &__name-text {
+      text-align: right;
+    }
+  }
+}
+
+
+@media(min-width: 1260px) {
+  .reviews {
+    &__text {
+      &--name {
+        flex-basis: 15%;
+      }
+    }
+  }
+}
