@@ -1,0 +1,39 @@
+.our-clients {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // &__wrapper-img:not(:nth-child(4n)) {
+  //   padding-bottom: 10px;
+  // }
+
+  &__wrapper-img {
+    padding: 0 10px;
+  }
+
+
+  &__img {
+    width: 100%;
+  }
+}
+
+@media(min-width: 768px) {
+  .our-clients {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    // &__wrapper-img:not(:nth-child(4n)) {
+    //   padding-bottom: 0;
+    //   padding-right: 5px;
+    // }
+
+    &__wrapper-img {
+      // margin: 0 auto;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+}
