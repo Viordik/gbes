@@ -3,6 +3,7 @@
 @import "./page-body.scss";
 @import "./menu.scss";
 @import "./news-bargaining.scss";
+@import "./our-clients.scss";
 @import "./application.scss";
 @import "./footer-header.scss";
 @import "./services.scss";
@@ -41,3 +42,7 @@
 
 //style for page-contact
 @import "./page-contact/page-contact.scss";
+
+
+//style for page reviews
+@import "./reviews/reviews.scss";

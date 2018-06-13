@@ -1,4 +1,5 @@
 .assessment {
+  margin-bottom: 60px;
   &__caption {
     padding-top: 20px;
     font-weight: 700;
@@ -43,10 +44,12 @@
 
     &__left {
       margin-right: 50px;
+      flex-basis: 60%;
     }
 
     &__right {
       display: inline-block;
+      flex-basis: 40%;
     }
   }
 }
