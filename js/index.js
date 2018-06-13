@@ -20,9 +20,9 @@ console.log(lotHouse);
 Array.prototype.forEach.call(yearButtons, function(yearButton, index) {
   yearButton.addEventListener('click', function(evt) {
 
-      blockHide[index].classList.toggle('history-company__text-hide--active');
+      // blockHide[index].classList.toggle('history-company__text-hide--active');
 
-      // lotHouse[index].classList.toggle('lot-house__description-hide--active');
+      lotHouse[index].classList.toggle('lot-house__description-hide--active');
 
       // news[index].classList.toggle('text-hide--active');
 
@@ -30,6 +30,33 @@ Array.prototype.forEach.call(yearButtons, function(yearButton, index) {
 });
 
 //===============================================
+
+
+$(document).ready(function(){
+  $('.services').slick({
+    autoplay: true,
+    autoplaySpeed: 1900,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    // adaptiveHeight: true,
+    // centerMode: true
+  });
+});
+
+$(document).ready(function(){
+  $('.our-clients__wrapper').slick({
+    autoplay: true,
+    autoplaySpeed: 1900,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    centerMode: true,
+  });
+});
+
+
 
 //===============================================
 // Yandex Map
