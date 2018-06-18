@@ -13,12 +13,20 @@
 
   &__more {
     display: inline-block;
-    color: #333;
+    max-width: 130px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
     text-transform: uppercase;
-    padding-top: 10px;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    background-color: #e00;
+    border-radius: 5px;
 
     &:hover {
-      color: #cd2626;
+      background-color: #cd2626;
     }
   }
 
