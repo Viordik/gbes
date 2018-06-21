@@ -5,8 +5,18 @@ var menu = document.querySelector('.menu-nav');
 btnMenu.addEventListener('click', function () {
   menu.classList.toggle('menu-nav--active');
 });
-//===============================================
+//==============================================
 //Активный пункт меню
+
+//===============================================
+//Выпадающее под меню
+var secondMenu = document.querySelector('.menu-list__dropdown');
+var open = document.querySelector('.open');
+
+open.addEventListener('click', function () {
+  open.classList.toggle('open--active');
+  secondMenu.classList.toggle('menu-list__dropdown--active');
+});
 
 //===============================================
 //Раскрывающиеся блоки с историей компании на странице "О компании"
@@ -18,11 +28,11 @@ var news = document.querySelectorAll('.text-hide')
 console.log(lotHouse);
 
 Array.prototype.forEach.call(yearButtons, function(yearButton, index) {
-  yearButton.addEventListener('click', function(evt) {
+  yearButton.addEventListener('click', function() {
 
-      // blockHide[index].classList.toggle('history-company__text-hide--active');
+      blockHide[index].classList.toggle('history-company__text-hide--active');
 
-      lotHouse[index].classList.toggle('lot-house__description-hide--active');
+      // lotHouse[index].classList.toggle('lot-house__description-hide--active');
 
       // news[index].classList.toggle('text-hide--active');
 
@@ -55,7 +65,7 @@ $(document).ready(function(){
     autoplaySpeed: 1900,
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 900,
     slidesToShow: 1,
   });
 });
@@ -66,6 +76,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    infinite: true,
     dots: true,
     variableWidth: true,
   });
@@ -78,6 +89,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    infinite: true,
     dots: true,
     variableWidth: true,
   });
