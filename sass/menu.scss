@@ -105,18 +105,74 @@
     }
   }
 
+  &__dropdown {
+    display: none;
+    padding: 0;
+    list-style: none;
+
+    &--active {
+      padding: 6px 0;
+
+      position: relative;
+      z-index: 2;
+      display: block;
+    }
+  }
+
   &__item-link {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
   }
+}
 
-  &__dropdown {
-    list-style: none;
+.open {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  bottom: -2px;
+  left: 10px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+  &--active {
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
+  }
+
+  // &:hover {
+  //   transform: rotate(-180deg);
+  //   transition: 0.5s ease;
+  // }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 2px;
+    height: 8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    width: 2px;
+    height: 8px;
+    background-color: #fff;
+    transform: rotate(-45deg);
   }
 }
 
+.second-menu {
+  padding: 6px 5px;
+}
 
 @media(min-width: 768px) {
   .menu {
@@ -141,9 +197,9 @@
       padding-top: 5px;
     }
 
-    &__logo {
+    // &__logo {
 
-    }
+    // }
 
     &__btn {
       display: none;
@@ -172,6 +228,22 @@
       }
     }
 
+    &__dropdown {
+
+      a:hover {
+        color: #fff;
+      }
+
+      &--active {
+        position: absolute;
+        width: 364px;
+        top: 96%;
+        left: -152px;
+        background-color: rgba(#cd2626, 1);
+        // background-color: rgba(#ecedf1, 0.2);
+      }
+    }
+
     &__item-link {
       color: #222222;
 
@@ -185,5 +257,22 @@
         border-bottom: 2px solid #cd2626;
       }
     }
+  }
+
+  .open {
+
+    &::after {
+      background-color: #333;
+    }
+    &::before {
+      background-color: #333;
+    }
+  }
+
+  .second-menu:not(:last-child) {
+    border-bottom: 1px solid #8b1a1a;
+  }
+  .second-menu:not(:first-child) {
+    border-top: 1px solid #fff;
   }
 }
