@@ -111,10 +111,10 @@
     list-style: none;
 
     &--active {
-      padding: 6px 0;
+      // padding: 6px 0;
 
       position: relative;
-      z-index: 2;
+      z-index: 1;
       display: block;
     }
   }
@@ -170,8 +170,10 @@
   }
 }
 
+
+
 .second-menu {
-  padding: 6px 5px;
+  padding: 11px 5px;
 }
 
 @media(min-width: 768px) {
@@ -240,6 +242,7 @@
         top: 96%;
         left: -152px;
         background-color: rgba(#cd2626, 1);
+        box-shadow: 2px 2px 5px 1px rgba(#333,.5);
         // background-color: rgba(#ecedf1, 0.2);
       }
     }
@@ -267,6 +270,10 @@
     &::before {
       background-color: #333;
     }
+  }
+
+  .second-menu {
+    padding: 12px 5px;
   }
 
   .second-menu:not(:last-child) {
